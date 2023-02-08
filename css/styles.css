@@ -59,17 +59,38 @@ body {
   color: var(--primary-text-color);
 }
 
-/* =====##### Допоміжні класи #####===== */
+/* =====##### *CONTAINERS* #####===== */
 
 .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
 }
 
 /* =====##### *HEADER* #####===== */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   background-color: var(--background-light-color);
 }
 
@@ -83,6 +104,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
+
+  margin-right: 76px;
 }
 .logo-theme-light {
   color: var(--color-navy-blue);
@@ -92,6 +115,10 @@ body {
 }
 
 /* -- Main navigation -- */
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .menu-link {
   font-weight: 500;
@@ -106,6 +133,10 @@ body {
 }
 
 /* -- Contacts -- */
+
+.contact-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .contact {
   font-style: normal;
