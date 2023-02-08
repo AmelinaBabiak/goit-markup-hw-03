@@ -84,7 +84,6 @@ body {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: var(--background-light-color);
 }
 
 /* =====##### *HEADER* #####===== */
@@ -92,7 +91,6 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-
   border: 1px solid var(--color-cornflower);
   background-color: var(--background-light-color);
 }
@@ -105,7 +103,7 @@ body {
 
 /* -- The logo & Main navigation -- */
 
-.nav-container {
+.menu {
   display: flex;
   align-items: center;
 }
@@ -216,10 +214,43 @@ body {
 
 /* -- Sections -- */
 
-.team-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.feature {
+  background-color: var(--background-light-color);
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.definition {
+  background-color: var(--background-light-color);
+}
+.definition-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.team {
   background-color: var(--backgraund-grey-color);
+}
+.team-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.team-card {
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 32px;
+  gap: 32px;
+  background: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .filter-button {
@@ -245,6 +276,21 @@ body {
   color: var(--color-white);
   background-color: var(--color-ocean);
 }
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
 .subtitle {
   font-size: 36px;
@@ -252,6 +298,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-top: 120xp;
+  margin-bottom: 72px;
 }
 
 .title {
@@ -259,18 +307,40 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .text {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 
+.team-card-text {
+  text-align: center;
+  width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.team-card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
 /* =====##### *FOOTER* #####===== */
 
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--backgraund-dark-color);
 }
 
@@ -278,5 +348,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  margin-top: 16px;
   color: var(--footer-text-color);
 }
