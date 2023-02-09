@@ -44,6 +44,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -77,8 +79,10 @@ body {
 
 .container {
   max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -288,7 +292,7 @@ body {
   padding-top: 12px;
   padding-right: 24px;
   padding-bottom: 12px;
-  padding-left: 26px;
+  padding-left: 24px;
 
   border: 1px solid var(--color-cornflower);
   border-radius: 4px;
@@ -299,20 +303,41 @@ body {
   color: var(--color-white);
   background-color: var(--color-ocean);
 }
+
 .button-container {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-top: 96px;
   margin-bottom: 72px;
   justify-content: center;
 }
 
 .card-container {
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+
+  margin-left: calc(-1 * 24px);
+  margin-top: calc(-1 * 24px);
+}
+
+.card-item {
+  flex-basis: calc(100% / 3 - 24px);
+  margin-left: 24px;
+  margin-top: 48px;
+}
+
+.card {
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 .subtitle {
